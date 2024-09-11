@@ -55,6 +55,10 @@ func factorial(number int) int {
 }
 
 // variadic functions
+// Functions that can take a variable number of arguments of the same type
+// It can be called by passing the arguments directly, or spreading an existing item
+// directly := sumup(1, 10, 15, -5)
+// spreading := sumup(numbers...)
 func sumup(numbers ...int) int {
 	sum := 0
 	for _, val := range numbers {
